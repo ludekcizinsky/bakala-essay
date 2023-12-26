@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+
+\usepackage{titlesec}
+
+% Section titles and subsection titles settings
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{2em}{}
+\titlespacing*{\section}{0pt}{1\baselineskip}{1\baselineskip}
+\titleformat{\subsection}{\normalfont\small\bfseries}{\thesubsection}{1em}{}[]
+\titlespacing{\subsection}{0pt}{1\baselineskip}{1\baselineskip}
+
+
+% Font
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{uarial}
+\renewcommand*\familydefault{\sfdefault}
+
+% Page layout
+\usepackage[a4paper,margin=0.9in]{geometry}
+\usepackage{wrapfig}
+\setlength{\intextsep}{10pt} % Adjust the vertical space
+\setlength{\columnsep}{10pt} % Adjust the horizontal space
+
+% Math
+\usepackage{mathptmx}
+\usepackage{amsfonts}
+
+% Fonts
+\usepackage{fontspec}
+
+% Hyperlinks
+\usepackage{hyperref}
+
+% Colors
+\usepackage{xcolor}
+
+% Tables
+\usepackage{booktabs}
+\usepackage{siunitx}
+
+% Figures
+\usepackage{graphicx}
+\usepackage{caption}
+\captionsetup[figure]{skip=2pt} 
+
+
+
+\title{
+    \vspace{-2cm} AlphaFold 2: the case for AI in biology
+}
+\author{
+    \vspace{0.1cm} Luděk Čižinský
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+As a Data Science student at Ecole Polytechnique Federale de Lausanne (EPFL), I specialize in Machine Learning (ML), a critical branch of Artificial Intelligence (AI). This field has led to remarkable innovations, from mastering the game of Go \cite{alphago} and autonomous driving \cite{darpa}, to advanced chatbots \cite{gpt3}, automated code writing \cite{codex}, sophisticated weather prediction \cite{graphcast}, and enhanced medical decision support \cite{medpalm2}. One of the most notable achievements is in predicting protein structures, exemplified by AlphaFold 2 (\texttt{AF2}) \cite{alphafold2}, all within the past two decades. These advances have significantly impacted our lives and are addressing some of the most pressing challenges of our era. In this essay, I focus on the impact of AlphaFold 2 in various fields, particularly in biology, since its release two years ago. My goal is to not only illustrates the transformative nature of ML but also the importance of open science in driving forward both scientific discovery and societal advancement.
+
+
+Proteins, composed of amino acid chains, are fundamental to biological functions, with their structure dictating their role. Understanding protein structure is vital for applications like drug design, protein engineering, and disease mechanism analysis. Traditionally, protein structure determination was time-consuming and expensive, often taking years, using methods like X-ray crystallography, cryo-electron microscopy, and nuclear magnetic resonance spectroscopy (\cite{forbes-af2}). With the advent of \texttt{AF2}, this process is now reduced to mere hours or even minutes, depending on the protein's length. This innovation represents a significant leap in efficiency and cost-effectiveness for protein structure prediction.
+
+
+
+
+\newpage
+\bibliographystyle{abbrv}
+\bibliography{references}
+\end{document}
